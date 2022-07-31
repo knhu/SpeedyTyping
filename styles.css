@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: yellow;
+    position: absolute;
+    left: 100px;
+    top: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color:aqua
+}
+
+body, user-attempt {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: bisque;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 800px;
+    max-width: 90%;
+}
+
+.stopwatch {
+    position: absolute;
+    top: 2rem;
+    font-size: 4rem;
+    color:brown;
+    font-weight: bold;
+}
+
+.quote-generator {
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+}
+
+.user-attempt {
+    background-color: transparent;
+    border: 2px solid #918746;
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+.user-attempt:focus {
+    border-color: black;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+    text-decoration: underline;
+}
